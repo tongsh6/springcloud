@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/tongsh6/springcloud/
+          searchPaths: SpringcloudConfig/**
+          username: tongsh6
+          password: 1qaz2wsx
